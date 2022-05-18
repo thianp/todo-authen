@@ -39,8 +39,6 @@ function TodoContextProvider(props) {
   };
 
   const updateTodo = (newValue, id) => {
-    console.log(newValue);
-    console.log(id);
     axios
       .patch("/todo/" + id, newValue)
       .then(() => {
